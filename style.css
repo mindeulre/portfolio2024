@@ -867,4 +867,21 @@ hr {
 footer {
   height: 350px;
   background-color: #193722;
+  padding: 100px 0;
+}
+
+footer .top-text-box {
+  margin-bottom: 40px;
+}
+
+footer .top-text-box p {
+  color: #FCF9ED;
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+footer .bottom-text-box p {
+  color: #FCF9ED;
+  text-align: center;
 }
