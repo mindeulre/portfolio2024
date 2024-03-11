@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 노말라이즈 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+/* 노말라이즈  끝 */
+
+/* 커스텀 시작 */
+
+/* 헤더 입니다. */
+header>.container {
+  width: 1440px;
+  height: 75px;
+  /*   border: 1px solid orange; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #726F6F;
+}
+
+
+header>.container>.left-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-left: 10px;
+  /*   border: 2px solid blue; */
+}
+
+/* header 로고 입니다. */
+header .logo img {
+  width: 70px;
+  height: 40px;
+  /*   border: 1px solid green; */
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+header>.container>.center-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: center;
+  display: flex;
+  /*   border: 2px solid blue; */
+}
+
+/* header 메뉴 목록 입니다. */
+header nav {
+  /*   border: 1px solid green; */
+  width: 375px;
+}
+
+header nav>ul>li {
+  display: flex;
+}
+
+header nav>ul>li>a {
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+header>.container>.right-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-right: 20px;
+}
+
+/* icon-list-box 입니다 (검색, 아이콘) */
+header .icon-list-box {
+  display: flex;
+  align-items: center;
+  /*   border: 1px solid green; */
+  justify-content: flex-end;
+}
+
+/* 검색창 커스텀 */
+header .icon-list-box>.search-box {
+  position: relative;
+  margin-right: 25px;
+}
+
+header .icon-list-box>.search-box>input {
+  width: 180px;
+  height: 32px;
+  border-radius: 20px;
+}
+
+header .icon-list-box>.search-box>i {
+  font-size: 19px;
+  position: absolute;
+  left: 150px;
+  top: 10px;
+}
+
+/* 아이콘 커스텀 */
+header .icon-list-box>.icon-box>a>i {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+/* 헤더 끝 */
+
+
+/* top-banner-section 시작 */
+.top-banner-section {
+  margin-bottom: 80px;
+  font-family: "GmarketSansMedium";
+}
+
+.my-slider-box-1 {
+  margin: 10px;
+}
+
+.my-slider-box-1 .swiper {
+  width: 1400px;
+  height: 540px;
+}
+
+
+.my-slider-box-1 .swiper-slide-1 {
+  background-image: url("https://i.imgur.com/klSmjwZ.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-slider-box-1 .swiper-slide-2 {
+  background-image: url("https://i.imgur.com/JhPtDCL.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-slider-box-1 .swiper-slide-3 {
+  background-image: url("https://i.imgur.com/b7PH5pm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-slider-box-1 .swiper-slide>.text-box {
+  margin-top: 110px;
+  margin-left: 45px;
+  margin-bottom: 150px;
+}
+
+.my-slider-box-1 .swiper-slide .main-text {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.my-slider-box-1 .swiper-slide .sub-text {
+  font-size: 20px;
+}
+
+.my-slider-box-1 .swiper-slide>a {
+  width: 180px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  display: inline-block;
+  line-height: 45px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-left: 45px;
+}
+
+.my-slider-box-1 .swiper-slide>a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.my-slider-box-1 .swiper-slide>a>i {
+  font-weight: bold;
+  line-height: 45px;
+  font-size: 15px;
+}
+
+
+
+.my-slider-box-1 .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 2px solid #fff;
+  opacity: 1;
+}
+
+.my-slider-box-1 .swiper-pagination .swiper-pagination-bullet-active {
+  width: 40px;
+  transition: width .5s;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid transparent;
+}
+
+/* top-banner-section 끝 */
+
+
+/* y2k-product-section 시작 */
+.y2k-product-list-section {
+  margin-bottom: 180px;
+}
+
+.y2k-product-list-section>.container {
+  /* border: 1px solid orange; */
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.y2k-product-list-section .left-img-box>img {
+  width: 680px;
+  height: 805px;
+  background-color: #eee;
+  margin-right: 40px;
+}
+
+
+/* 오른쪽 박스 시작 */
+.y2k-product-list-section .right-product-list-box {
+  /* width: 680px; height: 805px; */
+  border-top: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 오른쪽 > 메인텍스트 */
+.y2k-product-list-section .right-product-list-box>.main-text-box {
+  /* border: 1px solid blue; */
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.y2k-product-list-section .right-product-list-box>.main-text-box>h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.y2k-product-list-section .right-product-list-box>.main-text-box>p {
+  font-size: 18px;
+}
+
+
+/* 오른쪽 > 해쉬태그 */
+.y2k-product-list-section .right-product-list-box>.hash-box {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.y2k-product-list-section .right-product-list-box>.hash-box>div {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #797979;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 25px;
+}
+
+/* 오른쪽 > 제품 이미지 박스 */
+.y2k-product-list-section .right-product-list-box>.product-box {
+  /* border: 1px solid blue; */
+  display: flex;
+}
+
+.y2k-product-list-section .right-product-list-box>.product-box>.product-item-2 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.y2k-product-list-section .right-product-list-box>.product-box>.product-item>a>img {
+  width: 200px;
+  height: 250px;
+  background-color: #eee;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.y2k-product-list-section .right-product-list-box>.product-box>.product-item:nth-of-type(3)>a>img {
+  object-fit: contain;
+}
+
+
+.y2k-product-list-section .right-product-list-box>.product-box>.product-item>span {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.y2k-product-list-section .right-product-list-box>.product-box>.product-item>p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* y2k-product-section 끝 */
+
+
+/* campaign-text-section 시작 */
+.campaign-text-section {
+  margin-bottom: 180px;
+}
+
+.campaign-text-section>.contaienr {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.campaign-text-section .text-box_top {
+  margin-bottom: 25px;
+}
+
+.campaign-text-section .text {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: "GmarketSansMedium";
+  white-space: nowrap;
+}
+
+.campaign-text-section .text_1 {
+  display: flex;
+  align-items: center;
+}
+
+.campaign-text-section .text_2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.campaign-text-section .img-1 {
+  width: 150px;
+  height: 150px;
+  margin-left: 15px;
+  margin-right: 15px;
+  filter: drop-shadow(10px 6px 6px #c3c3c3);
+}
+
+.campaign-text-section .comment-box {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.campaign-text-section .comment-box span {
+  font-size: 24px;
+}
+
+.campaign-text-section .comment-box p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.campaign-text-section .comment-box .btn-box>a {
+  width: 300px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* campaign-text-section 끝 */
+
+/* sports-product-list-section 시작 */
+.sports-product-list-section {
+  margin-bottom: 180px;
+}
+
+.sports-product-list-section>.container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sports-product-list-section .list-box_running {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.sports-product-list-section .list-box>.main-img-box {
+  margin-bottom: 60px;
+}
+
+.sports-product-list-section .list-box>.main-img-box > a > img {
+  width: 440px;
+  height: 700px;
+  background-color: #eee;
+  object-fit: cover;
+}
+
+.sports-product-list-section .list-box>.list-item>.item {
+  display: flex;
+  margin-bottom: 20px;
+  /*   width: 440px; */
+}
+
+.sports-product-list-section .list-box>.list-item>.item>.img-box>a>img {
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  margin-right: 40px;
+  object-fit: cover;
+}
+
+.sports-product-list-section .list-box>.list-item>.item .text-box {
+  margin-bottom: 25px;
+}
+
+.sports-product-list-section .list-box>.list-item>.item .text-box>a {
+  font-weight: bold;
+}
+
+.sports-product-list-section .list-box>.list-item>.item p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.sports-product-list-section .list-box>.list-item>.item .icon-box {
+  display: flex;
+  justify-content: flex-end;
+  width: 190px;
+}
+
+.sports-product-list-section .list-box>.list-item>.item .icon-box>a>i {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+/* sports-product-list-section 끝 */
+
+
+/* our-story-list-section 시작 */
+.our-story-list-section {
+  margin-bottom: 200px;
+  font-family: "GmarketSansMedium";
+}
+
+.our-story-list-section>.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.our-story-list-section .title-text-box {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.our-story-list-section .our-story-list-box {
+  display: flex;
+}
+
+.our-story-list-section .our-story-list-box_2 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 60px 0;
+}
+
+
+
+.our-story-list-section .our-story-list-box_1 .img-box {
+  margin-right: 40px;
+
+}
+
+.our-story-list-section .our-story-list-box_2 .img-box {
+  margin-left: 40px;
+}
+
+.our-story-list-section .our-story-list-box .img-box>a>img {
+  width: 560px;
+  height: 330px;
+  object-fit: cover;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+
+.our-story-list-section .our-story-list-box .text-box {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-story-list-section .our-story-list-box .text-box>span {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.our-story-list-section .our-story-list-box .text-box>p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* our-story-list-section 끝 */
+
+/* footer 시작 */
+footer {
+  background-color: #292929;
+}
+
+footer>.container {
+  width: 1400px;
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+footer .logo-img-box {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .logo-img-box a>img {
+  width: 100px;
+  height: 63px;
+  vertical-align: bottom;
+}
+
+
+footer .companyInfo-box {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+footer .companyInfo-box .Info-text {
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer .companyInfo-box .Info-text>li::after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer .companyInfo-box .Info-text_1>.bold {
+  font-weight: bold;
+}
+
+footer .companyInfo-box .Info-text_2 {
+  font-size: 12px;
+}
+
+footer .CStime-box {
+  color: #fff;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .CStime-box .bold {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* footer 끝 */

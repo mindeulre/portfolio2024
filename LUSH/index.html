@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>LUSH SUMMER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <!-- 폰트어썸 연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- 스와이퍼  불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- 탑바 입니다. -->
+    <header>
+        <section class="top-bar-list-section">
+            <div class="container">
+                <!-- 로고 -->
+                <div class="top-bar-list logo">
+                    <img src="logo.svg" alt="" />
+                </div>
+                <!-- 텍스트 -->
+                <div class="top-bar-list text-box">
+                    <a href="#">러쉬소개</a>
+                    <a href="#">이벤트</a>
+                    <a href="#">기프트</a>
+                    <a href="#">커뮤니티</a>
+                    <a href="#">매장안내</a>
+                </div>
+                <!-- 아이콘 -->
+                <div class="top-bar-list icon-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i class="fa-regular fa-face-smile-beam"></i>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- 배너 이미지 입니다. -->
+    <section class="top-banner-section">
+        <div class="container">
+            <div class="top-banner-box">
+                <!-- 상단 텍스트 -->
+                <div class="text-box">
+                    <div class="text">
+                        시원한 여름 휴가를 위한 <br />러쉬만의 특별한 제품을 만나보세요.
+                    </div>
+                </div>
+                
+                <!-- 하단 버튼 -->
+                <div class="btn-box">
+                    <div class="button">
+                        <a href="#">바로가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 카테고리 입니다 -->
+    <section class="category-list-section">
+        <div class="container">
+            <!-- (제목)카테고리 -->
+            <div class="category-list-text">Catagory</div>
+            <!-- 카테고리 리스트 -->
+            <div class="category-list-item">
+                <div class="category-list">
+                    <a href="#"><img src="https://i.imgur.com/MRC8dqh.png" alt="" /></a>
+                    <div><span>페이스</span></div>
+                </div>
+                <div class="category-list">
+                    <a href="#"><img src="https://i.imgur.com/9xzXPfz.png" alt="" /></a>
+                    <div><span>보디</span></div>
+                </div>
+                <div class="category-list">
+                    <a href="#"><img src="https://i.imgur.com/4rFlBdg.png" alt="" /></a>
+                    <div><span>프레그런스</span></div>
+                </div>
+                <div class="category-list">
+                    <a href="#"><img src="https://i.imgur.com/B4cupGH.png" alt="" /></a>
+                    <div><span>배쓰</span></div>
+                </div>
+                <div class="category-list">
+                    <a href="#"><img src="https://i.imgur.com/QZaDS02.png" alt="" /></a>
+                    <div><span>샤워</span></div>
+                </div>
+                <div class="category-list">
+                    <a href="#"><img src="https://i.imgur.com/njPtN6P.png" alt="" /></a>
+                    <div><span>헤어</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new-product-item 섹션 입니다. -->
+    <div class="new-product-item_text">
+        <p>NEW PRODUCT</p>
+        <p>갓 나온 신선한 제품을 추천해요!</p>
+    </div>
+    <!-- 슬라이드 1 -->
+    <div class="my-slider-box-1">
+        <div class="my-slider-box-1__con">
+            <div class="pagination-box">
+                <div class="swiper-pagination">
+                </div>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- 첫번째 -->
+                    <div class="swiper-slide swiper-slide_1">
+                        <div class="new-product-item_list new-product-item_list-1">
+                            <!-- 왼쪽 박스 -->
+                            <div class="new-product-item_1">
+                                <!-- 제품 이미지 -->
+                                <div class="img-box">
+                                    <img src="https://i.imgur.com/3DqJUzM.jpg" alt="" class="new-1">
+                                    <img src="https://i.imgur.com/bw81jql.jpg" alt="" class="new-2">
+                                </div>
+                                <div class="new-icon">
+                                    <div class="icon">new</div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 박스 -->
+                            <div class="new-product-item_2">
+                                <!-- !!!!css 태그 정리 필요!!!!! -->
+                                <div class="new-product-item">
+                                    <div class="product-name_1">배쓰밤</div>
+                                    <div class="product-name_2">
+                                        <div class="name">본 파이어</div>
+                                        <div class="icon_1">new</div>
+                                        <div class="icon_2">리미티드</div>
+                                    </div>
+                                    <div class="product-name_3">시나몬과 오렌지의 알싸하고 달콤한 향기는 캠핑장 풍경을 떠오르게 해요.</div>
+                                    <div class="product-price">20,000원</div>
+                                </div>
+                                <div class="product-icon-box">
+                                    <div class="product-icon">
+                                        <div class="icon icon-1">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        </div>
+                                        <div class="icon icon-2">
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon-go-box">
+                                        <div class="product-icon-go">
+                                            <a href="#">
+                                                <span>바로가기</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 두번째 -->
+                    <div class="swiper-slide swiper-slide_2">
+                        <div class="new-product-item_list new-product-item_list-2">
+                            <!-- 왼쪽 박스 -->
+                            <div class="new-product-item_1">
+                                <!-- 제품 이미지 -->
+                                <div class="img-box">
+                                    <img src="https://i.imgur.com/Y8cOUYb.jpg" alt="" class="new-1">
+                                    <img src="https://i.imgur.com/1BaTs37.jpg" alt="" class="new-2">
+                                </div>
+                                <div class="new-icon">
+                                    <div class="icon">new</div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 박스 -->
+                            <div class="new-product-item_2">
+                                <!-- !!!!css 태그 정리 필요!!!!! -->
+                                <div class="new-product-item">
+                                    <div class="product-name_1">샤워젤</div>
+                                    <div class="product-name_2">
+                                        <div class="name">로드 오브 미스룰</div>
+                                        <div class="icon_1">new</div>
+                                        <div class="icon_2">리미티드</div>
+                                    </div>
+                                    <div class="product-name_3">달콤함과 알싸함, 그리고 따뜻한 향기가 어우러진 매혹적인 샤워시간을 즐겨보세요.</div>
+                                    <div class="product-price">19,000원</div>
+                                </div>
+                                <div class="product-icon-box">
+                                    <div class="product-icon">
+                                        <div class="icon icon-1">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        </div>
+                                        <div class="icon icon-2">
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon-go-box">
+                                        <div class="product-icon-go">
+                                            <a href="#">
+                                                <span>바로가기</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 세번째 -->
+                    <div class="swiper-slide swiper-slide_3">
+                        <div class="new-product-item_list new-product-item_list-3">
+                            <!-- 왼쪽 박스 -->
+                            <div class="new-product-item_1">
+                                <!-- 제품 이미지 -->
+                                <div class="img-box">
+                                    <img src="https://i.imgur.com/ooQosPc.jpg" alt="" class="new-1">
+                                    <img src="https://i.imgur.com/VtHpu4n.jpg" alt="" class="new-2">
+                                </div>
+                                <div class="new-icon">
+                                    <div class="icon">new</div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 박스 -->
+                            <div class="new-product-item_2">
+                                <!-- !!!!css 태그 정리 필요!!!!! -->
+                                <div class="new-product-item">
+                                    <div class="product-name_1">샤워젤리</div>
+                                    <div class="product-name_2">
+                                        <div class="name">바운싱 산타</div>
+                                        <div class="icon_1">new</div>
+                                        <div class="icon_2">리미티드</div>
+                                    </div>
+                                    <div class="product-name_3">미끌미끌 통통거리는 사용감이 샤워 시간을 즐겁게 만들어줘요.</div>
+                                    <div class="product-price">17,000원</div>
+                                </div>
+                                <div class="product-icon-box">
+                                    <div class="product-icon">
+                                        <div class="icon icon-1">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                        </div>
+                                        <div class="icon icon-2">
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-icon-go-box">
+                                        <div class="product-icon-go">
+                                            <a href="#">
+                                                <span>바로가기</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function MySliderBox1__init() {
+            var Tab = Array();
+            Tab.push("1");
+            Tab.push("2");
+            Tab.push("3");
+            let swiper = new Swiper(".my-slider-box-1 .swiper", {
+                slidesPerView: 1,
+                loop: true,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + Tab[index] + "</span>";
+                    },
+                },
+            });
+        }
+
+        MySliderBox1__init();
+    </script>
+
+    <!-- summer shower 입니다. -->
+    <div class="summer-shower_text-box">
+        <div class="summer-shower_text summer-shower_text-1">
+            <p>SUMMER SHOWER</p>
+        </div>
+        <div class="summer-shower_text summer-shower_text-2">
+            <p>러쉬의 특별한 샤워젤로 시원하고 행복한 여름 보내세요.</p>
+        </div>
+    </div>
+    <!-- 슬라이드 2 -->
+    <div class="my-slider-box-2">
+        <div class="my-slider-box-2__con">
+            <div class="pagination-box">
+                <div class="swiper-pagination">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                        aria-current="true">
+                        <img src="https://i.imgur.com/1Kt2OEP.png" title="미모사.png" />
+                    </span>
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                        aria-current="true">
+                        <img src="https://i.imgur.com/LGP9EuH.png" title="슬리피.png" />
+                    </span>
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                        aria-current="true">
+                        <img src="https://i.imgur.com/rYsL5oN.png" title="더티.png" />
+                    </span>
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                        aria-current="true">
+                        <img src="https://i.imgur.com/niW3F7Q.png" title="그레스.png" />
+                    </span>
+                </div>
+            </div>
+            <!-- Slider main container -->
+            <!-- mySwiper 추가 -->
+            <div class="swiper mySwiper">
+                <div class="product-bg-box"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- 첫번째 -->
+                    <div class="swiper-slide swiper-slide_1">
+                        <div class="summer-shower-box_main-box">
+                            <!-- info box -->
+                            <div class="info-bg-box">
+                                <div class="info-box">
+                                    <div class="info-box_top">
+                                        <!-- 미모사 제품 설명 -->
+                                        <div class="info-list_1">
+                                            <div class="gel">샤워젤</div>
+                                            <div class="title-name">
+                                                <p>미모사</p>
+                                                <div class="icon-box">
+                                                    <div class="icon">리미티드</div>
+                                                </div>
+                                            </div>
+                                            <div class="title-info">미모사의 달콤한향은 기분을 상쾌하게 하고 일상에 활력을 더해 줍니다.</div>
+                                        </div>
+                                        <!-- 고객 후기 -->
+                                        <div class="info-list_2">
+                                            <div class="ct-box">
+                                                <div class="ct-info">
+                                                    <div class="ct-img">
+                                                        <img src="https://i.imgur.com/NRSo26Y.png" alt="">
+                                                    </div>
+                                                    <p>최*라</p>
+                                                </div>
+                                                <div class="star-img">
+                                                    <img src="https://i.imgur.com/rSiaw1J.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-box">
+                                                <p>" 같은 향기의<br />보디 스프레이를 사용하면서<br />늘 기분이 좋았어요 !"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- info 아이콘 박스 -->
+                                    <div class="info-box_icon">
+                                        <div class="icon-list">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <a href="#">
+                                            <img src="https://i.imgur.com/5DOcVUt.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 이미지 들어갈 박스 -->
+                            <img src="https://i.imgur.com/mBhS5Ky.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 두번째 -->
+                    <div class="swiper-slide swiper-slide_2">
+                        <div class="summer-shower-box_main-box">
+                            <!-- info box -->
+                            <div class="info-bg-box">
+                                <div class="info-box">
+                                    <div class="info-box_top">
+                                        <!-- 슬리피 제품 설명 -->
+                                        <div class="info-list_1">
+                                            <div class="gel">샤워젤</div>
+                                            <div class="title-name">
+                                                <p>슬리피</p>
+                                                <div class="icon-box icon-box_best">
+                                                    <div class="icon">best</div>
+                                                </div>
+                                            </div>
+                                            <div class="title-info">라벤더와 일랑일랑의 편안한 향기를 경험해보세요.</div>
+                                        </div>
+                                        <!-- 고객 후기 -->
+                                        <div class="info-list_2">
+                                            <div class="ct-box">
+                                                <div class="ct-info">
+                                                    <div class="ct-img">
+                                                        <img src="https://i.imgur.com/NRSo26Y.png" alt="">
+                                                    </div>
+                                                    <p>이*지</p>
+                                                </div>
+                                                <div class="star-img">
+                                                    <img src="https://i.imgur.com/rSiaw1J.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-box">
+                                                <p>" 스트레스 받은 날<br />슬리피로 샤워하면 편안하게 잠을 <br />잘 수 있었어요 !"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- info 아이콘 박스 -->
+                                    <div class="info-box_icon">
+                                        <div class="icon-list">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <a href="#">
+                                            <img src="https://i.imgur.com/dBZ3WyA.png" title="슬리피_바로가기.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 이미지 들어갈 박스 -->
+                            <img src="https://i.imgur.com/pQqVu2V.png" title="슬리피_사용이미지.png" />
+                        </div>
+                    </div>
+                    <!-- 세번째 -->
+                    <div class="swiper-slide swiper-slide_3">
+                        <div class="summer-shower-box_main-box">
+                            <!-- info box -->
+                            <div class="info-bg-box">
+                                <div class="info-box">
+                                    <div class="info-box_top">
+                                        <!-- 슬리피 제품 설명 -->
+                                        <div class="info-list_1">
+                                            <div class="gel">샤워젤</div>
+                                            <div class="title-name">
+                                                <p>더티 스프링워시</p>
+                                                <div class="icon-box icon-box_best">
+                                                    <div class="icon">best</div>
+                                                </div>
+                                            </div>
+                                            <div class="title-info">시원한 향기와 함께하는 샤워는 맑은 물에서 유영하는 느낌을 선사합니다.</div>
+                                        </div>
+                                        <!-- 고객 후기 -->
+                                        <div class="info-list_2">
+                                            <div class="ct-box">
+                                                <div class="ct-info">
+                                                    <div class="ct-img">
+                                                        <img src="https://i.imgur.com/NRSo26Y.png" alt="">
+                                                    </div>
+                                                    <p>김*수</p>
+                                                </div>
+                                                <div class="star-img">
+                                                    <img src="https://i.imgur.com/rSiaw1J.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-box">
+                                                <p>" 머리부터 발끝까지 시원한 느낌<br />여름에 꼭 필요한 아이템입니다!"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- info 아이콘 박스 -->
+                                    <div class="info-box_icon">
+                                        <div class="icon-list">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <a href="#">
+                                            <img src="https://i.imgur.com/ZyaBFOH.png" title="더티_바로가기.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 이미지 들어갈 박스 -->
+                            <img src="https://i.imgur.com/0iUyWgl.png" title="더티_사용.png" />
+                        </div>
+                    </div>
+                    <!-- 네번째 -->
+                    <div class="swiper-slide swiper-slide_4">
+                        <div class="summer-shower-box_main-box">
+                            <!-- info box -->
+                            <div class="info-bg-box">
+                                <div class="info-box">
+                                    <div class="info-box_top">
+                                        <!-- 슬리피 제품 설명 -->
+                                        <div class="info-list_1">
+                                            <div class="gel">샤워젤</div>
+                                            <div class="title-name">
+                                                <p>그래스</p>
+                                                <div class="icon-box icon-box_best">
+                                                    <div class="icon">best</div>
+                                                </div>
+                                            </div>
+                                            <div class="title-info">햇살 가득한 맑은 날의 상쾌한 향기가 하루의 시작을 좋게 만들어요.</div>
+                                        </div>
+                                        <!-- 고객 후기 -->
+                                        <div class="info-list_2">
+                                            <div class="ct-box">
+                                                <div class="ct-info">
+                                                    <div class="ct-img">
+                                                        <img src="https://i.imgur.com/NRSo26Y.png" alt="">
+                                                    </div>
+                                                    <p>송*아</p>
+                                                </div>
+                                                <div class="star-img">
+                                                    <img src="https://i.imgur.com/rSiaw1J.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-box">
+                                                <p>" 풀 냄새가 풀풀<br />피부가 부드럽고 촉촉해져요!"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- info 아이콘 박스 -->
+                                    <div class="info-box_icon">
+                                        <div class="icon-list">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <a href="#">
+                                            <img src="https://i.imgur.com/C6OPgVi.png" title="그래스_바로가기.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 이미지 들어갈 박스 -->
+                            <img src="https://i.imgur.com/k4pJ3Gc.png" title="그래스_사용.png"/>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <!-- best-item-list-section 입니다. -->
+    <section class="best-item-list-section">
+        <div class="container">
+            <!-- 제목 텍스트 -->
+            <div class="best-item_text-box">
+                <div class="main-text">
+                    <span>마음은 내가 못 정해도 향기는 내가 정할 수 있어요!</span>
+                </div>
+                <div class="sub-text">
+                    <span>나에게 즐거움을 선물해 볼까요?</span>
+                </div>
+            </div>
+            <!-- 메인 이미지 박스 -->
+            <div class="best-item_list-box">
+                <!-- 프레그런스 -->
+                <div class="best-item_top-list">
+                    <div class="video">
+                        <iframe width="920" height="520"
+                            src="https://www.youtube.com/embed/EYg4I9UeCkU?si=FdVmwBkPDDMdLexl"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="best-item-content">
+                        <a href="#"><img src="https://i.imgur.com/iDqEzLb.png" alt="" class="pg-img"></a>
+                        <div class="best-item_bg-box">
+                            <div class="text-box">
+                                <div class="text-1">
+                                    <a href="#">트와일라잇</a>
+                                    <p>프레그런스</p>
+                                </div>
+                                <div class="review-star">
+                                    <img src="https://i.imgur.com/rSiaw1J.png" alt="">
+                                    <span>4.8 (257)</span>
+                                </div>
+                                <div class="hash-tag">
+                                    <a href="#"># 프레그런스</a>
+                                    <a href="#"># 보디 스프레이</a>
+                                    <a href="#"># 힐링템</a>
+                                    <br />
+                                    <a href="#"># 마음을 편안하게 하고 싶을 때</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <a href="#">
+                                <span>Add to bag</span>
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 배쓰밤 -->
+                <div class="best-item_bottom-list">
+                    <div class="best-item-content">
+                        <a href=""><img src="https://i.imgur.com/0iZaBqA.png" alt="" class="bathbom-img"></a>
+                        <div class="best-item_bg-box">
+                            <div class="text-box">
+                                <div class="text-1">
+                                    <a href="#">인터갈락틱</a>
+                                    <p>배쓰밤</p>
+                                </div>
+                                <div class="review-star">
+                                    <img src="https://i.imgur.com/rSiaw1J.png" alt="">
+                                    <span>4.8 (257)</span>
+                                </div>
+                                <div class="hash-tag">
+                                    <a href="#"># 배쓰밤</a>
+                                    <a href="#"># 상쾌하고 싱그러운</a>
+                                    <a href="#"># 입욕제</a>
+                                    <br />
+                                    <a href="#"># 러쉬 첫 이용자에게 추천</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <a href="#">
+                                <span>Add to bag</span>
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <iframe width="920" height="520"
+                            src="https://www.youtube.com/embed/H5_FZNCmyiw?si=w85NlFAl5_yMR4k9"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gift -->
+    <div class="gift-item_text-box">
+        <div class="main-text">
+            <span>소중한 사람을 위한 선물을 추천드려요</span>
+        </div>
+        <div class="sub-text">
+            <span>러쉬만의 특별한 제품을 상자안에 넣었어요.</span>
+        </div>
+    </div>
+    <section class="gift-item-list-section">
+        <div class="gift-item_content-box">
+            <img src="https://i.imgur.com/dfdlBEE.png" alt="" class="left-gift-img">
+            <div class="gift-item_info-box">
+                <div class="info_img-box">
+                    <a href="#"><img src="https://i.imgur.com/uWM5qC3.png" alt=""></a>
+                </div>
+                <div class="info_right-box">
+                    <div class="info_text-box">
+                        <div class="info_text-1">
+                            <div class="info-list_main-text">
+                                <span>릴렉스</span>
+                            </div>
+                            <div class="info-list_sub-text">
+                                <span>샤워 젤 / 버블바 / 배쓰밤 / 보디로션</span>
+                            </div>
+                        </div>
+                        <div class="info_text-2">
+                            <span>힘든 친구에게 </br>달콤한 보랏빛 꿈을 선물해 보세요!</span>
+                        </div>
+                        <div class="info-icon-box">
+                            <a href="#">
+                                <div class="gift-icon">
+                                    <span>선물하기</span>
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="https://i.imgur.com/O78mSUv.png" alt="" class="right-gift-img">
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer_box">
+                <div class="footer_list-1">
+                    <div class="notice-box">
+                        <p><a href="#">공지사항</a></p>
+                        <ul>
+                            <li>
+                                <a href="#">[배송공지] 물류센터 임시 휴뮤 안내</a>
+                                <span>(8/20~30)</span>
+                            </li>
+                            <li>
+                                <a href="#">[배송공지] 물류센터 임시 휴뮤 안내</a>
+                                <span>(8/20~30)</span>
+                            </li>
+                            <li>
+                                <a href="#">[배송공지] 물류센터 임시 휴뮤 안내</a>
+                                <span>(8/20~30)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cs-box">
+                        <div class="cs-list">
+                            <p class="tt-name">고객센터</p>
+                            <div class="cct-list">
+                                <span>1644-2357</span>
+                                <a href="#">FAQ<i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="#">1:1 문의<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <p class="time">이용시간 AM 09:00~PM 06:00 / 점심시간 PM 12:00~PM 01:00 / 휴무 (토,일,공휴일)</p>
+                        </div>
+                    </div>
+                    <div class="qr-box">
+                        <img src="https://i.imgur.com/QI8tAzd.png" alt="">
+                        <div class="text-list">
+                            <a href="#">lush.co.kr MOBILE APP</a>
+                            <p>러쉬를</br>모바일 앱에서 만나보세요!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_list-2">
+                    <ul>
+                        <li>
+                            <a href="#">러쉬소개</a>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">영상정보관리지침</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">채용안내</a>
+                        </li>
+                        <li>
+                            <a href="#">기업선물</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_list-3">
+                    <div class="copy-info">
+                        <div class="copy copy-1">
+                            <span>서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아 |</span>
+                            <span>사이트 운영자 : 주식회사 러쉬코리아 |</span>
+                            <span>대표이사 : 우미령</span>
+                        </div>
+                        <div class="copy copy-2">
+                            <span>사업자 등록번호 : 201-81-77964</span>
+                            <a href="#">사업자정보확인</a>
+                        </div>
+                        <div class="copy copy-3">
+                            <span>통신판매업 신고번호 : 2022-서울강남-02857 |</span>
+                            <span>개인정보보호책임자 : 신상훈</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+
+</html>
