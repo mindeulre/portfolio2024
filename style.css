@@ -433,14 +433,6 @@ hr {
   bottom: 0;
 }
 
-.about-box .same-box2-1 {
-  width: 320px;
-  height: 200px;
-  border: 5px solid #193722;
-  border-radius: 25px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.25);
-}
-
 .about-box {
   display: flex;
   margin: 40px 0;
