@@ -357,66 +357,80 @@ hr {
   box-shadow: 10px 10px 15px rgba(0,0,0,0.25);
 }
 
-.big-box .coding-info-text-box {
-  font-size: 32px;
-  color: #193722;
-  text-align: right;
-  padding-right: 40px;
-  padding-top: 80px;
+.coding-name-box {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content:flex-end;
+  align-items: center;
+  padding: 0 15px;
+  position: relative;
 }
 
-.big-box .coding-info-text-box i {
-  margin-right: 40px;
-  padding-bottom: 8px;
+.designTool-name-box {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  position: relative;
+}
+
+.big-box .coding-info-text-box {
+  font-size: 24px;
+  color: #39403b;
+  text-align: right;
+}
+
+.big-box .coding-info-text-box p {
+  margin-bottom: 15px;
+}
+
+.big-box .coding-info-text-box a {
+  font-size: 16px;
+  color: #bfbfbf;
+  width: 200px;
+  height: 25px;
+  display: inline-block;
+  line-height: 25px;
+}
+
+.big-box .coding-info-text-box a:hover {
+  color: rgb(228, 175, 76);
+}
+
+.big-box .coding-info-img-box > img {
+  width: 129px;
+  height: 152px;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
 }
 
 .big-box .design-info-text-box {
-  font-size: 32px;
-  color: #193722;
-  padding-left: 40px;
-  padding-top: 80px;
-  display: flex;
-  align-items: flex-end;
+  font-size: 24px;
+  color: #39403b;
 }
 
-.big-box .design-info-text-box i {
-  margin-left: 40px;
-  padding-bottom: 8px;
+.big-box .design-info-text-box p {
+  margin-bottom: 15px;
 }
 
-.about-box .same-box2-1 {
-  width: 320px;
-  height: 200px;
-  border: 5px solid #193722;
-  border-radius: 25px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.25);
+.big-box .design-info-text-box a {
+  font-size: 16px;
+  color: #bfbfbf;
+  width: 180px;
+  height: 25px;
+  display: inline-block;
+  line-height: 25px;
 }
 
-.about-box {
-  display: flex;
-  margin: 40px 0;
+.big-box .design-info-text-box a:hover {
+  color: rgb(228, 175, 76);
 }
 
-.about-box .center-box {
-  width: 440px;
-  height: 200px;
-  background-color: #193722;
-  /* border: 5px solid #193722; */
-  border-radius: 25px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.25);
-
-  margin: 0 40px;
-}
-
-.about-box .center-box > .text-box {
-  text-align: center;
-  color: #FCF9ED;
-  line-height: 200px;
-  font-size: 36px;
-  letter-spacing: 0.5rem;
+.big-box .design-info-img-box > img {
+  width: 170px;
+  height: 164px;
+  position: absolute;
+  right: 15px;
+  bottom: 0;
 }
 
   
